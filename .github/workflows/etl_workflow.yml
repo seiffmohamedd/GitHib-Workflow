@@ -33,7 +33,7 @@ jobs:
           python -c "import extract, transform, load; data=extract.extract(); clean_df, agg_df=transform.transform(data); load.load(clean_df, agg_df)"
           
       - name: Upload results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: etl-results
           path: |
